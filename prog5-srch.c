@@ -6,7 +6,7 @@ void main(){
     printf("enter array size:"); 
     scanf("%d",&n);
 
-    int a[n],pos,search;
+    int a[n],pos=0,search;
     printf("enter array elements\n");
     for(i=0 ; i<n ; i++){
         printf("a[%d]:",i);
@@ -18,17 +18,14 @@ void main(){
     printf("\nenter the element to be found:");
     scanf("\n%d",&search);
 
-    printf("element found at array index:");
     for(int i=0;i<n;i++){
         if(a[i]==search){
-           pos=i;
+           printf("element found at:%d",i);
+           pos=1;
            break;
         }
     }
-    if(pos=i){
-        printf("element found at array index:%d",i);
-    }
-    else{
-        printf("element not found");
-    } 
+   if(pos != 1){
+       printf("element not found");
+   }
 }
