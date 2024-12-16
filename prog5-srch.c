@@ -20,7 +20,7 @@ void main(){
 
     for(int i=0;i<n;i++){
         if(a[i]==search){
-           printf("element found at:%d",i);
+           printf("element found at index:%d",i);
            pos=1;
            break;
         }
