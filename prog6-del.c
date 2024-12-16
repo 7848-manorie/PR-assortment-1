@@ -27,7 +27,7 @@ void main(){
         a[i] = a[i+1];
     }
     printf("array after deletion:");
-    for(int i =0 ; i<n ; i++)
+    for(int i =0 ; i<n-1 ; i++)
     {
        printf("%d ",a[i]);
     }
